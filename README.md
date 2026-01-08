@@ -103,6 +103,8 @@ class MyApp(App):
 if __name__ == "__main__":
     MyApp().run()
 ```
+* PS: 
+In linux, If you encounter the error where it says "App has no known associated programs with it", just go to the file's properties and enable "Allow executing files as program" and you should be good to go.
 
 ---
 
