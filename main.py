@@ -41,7 +41,7 @@ if platform.system() == 'Windows':
   os.chdir("kivy-project")
   subprocess.run(["py","-3.13","-m","venv","venv"])
   subprocess.run(["venv/Scripts/pip","install","kivy[full]"])
-  with open("main.py","x") as file:
+  with open("main.kv","x") as file:
     file.write(KDefault)
   print("Done Creating Project")
   print("Openning Project in VSCode...")
@@ -79,9 +79,10 @@ elif platform.system() == 'Linux':
     "zlib1g-dev"])
   subprocess.run(["python3","-m","venv","venv"])
   subprocess.run(["venv/bin/pip","install","kivy[full]"])
-  with open("main.py","x") as file:
+  with open("main.kv","x") as file:
     file.write(KDefault)
   print("Done Creating Project")
   print("Openning Project in VSCode...")
   subprocess.run(["code", "."])
+
   
