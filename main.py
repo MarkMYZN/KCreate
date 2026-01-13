@@ -43,6 +43,8 @@ if platform.system() == 'Windows':
   subprocess.run(["venv/Scripts/pip","install","kivy[full]"])
   with open("main.kv","x") as file:
     file.write(KDefault)
+  with open("main_styles.kv", "w") as file:
+    pass
   print("Done Creating Project")
   print("Openning Project in VSCode...")
   subprocess.run(["code", "."], shell=True)
@@ -88,4 +90,5 @@ elif platform.system() == 'Linux':
   subprocess.run(["code", "."])
 
   
+
 
