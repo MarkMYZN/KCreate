@@ -79,10 +79,13 @@ elif platform.system() == 'Linux':
     "zlib1g-dev"])
   subprocess.run(["python3","-m","venv","venv"])
   subprocess.run(["venv/bin/pip","install","kivy[full]"])
-  with open("main.kv","x") as file:
+  with open("main.py","x") as file:
     file.write(KDefault)
+  with open("main_styles.kv", "w") as file:
+    pass
   print("Done Creating Project")
   print("Openning Project in VSCode...")
   subprocess.run(["code", "."])
 
   
+
